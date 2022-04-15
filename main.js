@@ -26,30 +26,29 @@ function darkMode(){
 
 const isChecked = document.getElementById("check").checked;
 const header = document.getElementById("main-header");
-const test = document.querySelectorAll('#timeline li div');
-const test2 = document.querySelectorAll('#timeline ul li');
-
+const boxes = document.querySelectorAll('#timeline li div');
+const dots = document.querySelectorAll('#timeline ul li');
 
 if (isChecked) {
   document.body.style.background = '#222';
   header.style.background = '#111';
 
-  for(let i = 0 ; i < test.length ; i++){
-    test[i].classList.remove("light-mode");
-    test[i].classList.add("dark-mode");
-    test2[i].classList.remove("light-mode");
-    test2[i].classList.add("dark-mode");
+  for(let i = 0 ; i < boxes.length ; i++){
+    boxes[i].classList.remove("light-mode");
+    boxes[i].classList.add("dark-mode");
+    dots[i].classList.remove("light-mode");
+    dots[i].classList.add("dark-mode");
   }
 }
 else {
   document.body.style.background = '#425b84';
   header.style.background = '#5b7bb4';
 
-  for(let i = 0 ; i < test.length ; i++){
-    test[i].classList.add("light-mode");
-    test[i].classList.remove("dark-mode");
-    test2[i].classList.add("light-mode");
-    test2[i].classList.remove("dark-mode");
+  for(let i = 0 ; i < boxes.length ; i++){
+    boxes[i].classList.add("light-mode");
+    boxes[i].classList.remove("dark-mode");
+    dots[i].classList.add("light-mode");
+    dots[i].classList.remove("dark-mode");
     }
 }
 }

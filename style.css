@@ -46,7 +46,7 @@ h1{
      margin-top: 50px;
 }
 
-/* Do zrobienia lini */
+/* Line */
 #timeline ul li {
     list-style:none;
     position: relative;
@@ -206,9 +206,7 @@ input.toggle + label::before {
     background:  #DDD;
     border-radius: 1.5em;
     margin-right: .25em;
-    /* z-index: 100; */
 }
-
 
 input.toggle + label::after {
     position: absolute;
@@ -220,7 +218,6 @@ input.toggle + label::after {
     border-radius: 100%;
     transition: 0.4s;
 }
-
 
 input.toggle:checked + label::after {
 transform: translateX(100%);
