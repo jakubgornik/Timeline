@@ -188,6 +188,12 @@ border-style: solid;
     h3{
         margin-left: 30px;
     }
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
 }
 
 
